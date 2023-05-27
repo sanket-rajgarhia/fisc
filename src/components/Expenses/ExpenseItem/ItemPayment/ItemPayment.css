@@ -1,0 +1,75 @@
+.payment-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    color: white;
+}
+
+.payment-details__mode{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.payment-details__mode__name{
+    font-weight: bold;
+}
+
+.payment-details__mode__institution-name{
+    font-size: 0.8rem;
+}
+
+.payment-details__mode__details{
+    font-size: 0.8rem;
+}
+
+.payment-details__amount{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+}
+
+.payment-details__amount__details{
+    display: flex;
+    flex-direction: row;
+
+    font-weight: bold;
+    background-color: #40005d;
+    border: 1px solid white;
+    border-radius: 12px;
+
+    padding: 0.5rem;
+}
+
+.app-base-currency-symbol{
+    padding-right: 0.5rem;
+}
+
+.payment-details__amount__value{
+}
+
+@media screen and (max-width: 1200px) {
+
+    .payment-details{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        flex-shrink: 1;
+        flex-grow: 1;
+        order: 2;
+    }
+
+    .payment-details__mode{
+    }
+
+    .payment-details__amount{
+        width: 100%;
+    }
+
+    .payment-details__amount__details{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
