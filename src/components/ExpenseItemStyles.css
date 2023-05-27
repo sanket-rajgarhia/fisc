@@ -1,0 +1,143 @@
+.expense-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    box-shadow: 5px 3px 8px rgba(0,0,0,0.25);
+    border-radius: 12px;
+    background-color: #4b4b4b;
+
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.expense-item__date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 12px;
+
+    padding: 0.5rem 0.5rem;
+}
+
+.expense-item__date__month{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.expense-item__date__year{
+    font-size: 0.8rem;
+}
+
+.expense-item__date__day{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.expense-item__description{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    color: white;
+    /*border: 1px solid white;*/
+}
+
+.expense-item__description__category{
+    /*border: 1px solid red;*/
+}
+
+.expense-item__description__category__name{
+    font-weight: bold;
+}
+
+.expense-item__description-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /*border: 1px solid blue;*/
+}
+
+.expense-item__description-details__item{
+    /*border: 1px solid white;*/
+}
+
+.expense-item__description-details__narration{
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: lightgrey;
+    /*border: 1px solid white;*/
+}
+
+.expense-item__payment-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    color: white;
+    /*border: 1px solid pink;*/
+}
+
+.expense-item__payment-details__mode{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    /*border: 1px solid red;*/
+}
+
+.expense-item__payment-details__mode__name{
+    font-weight: bold;
+    /*border: 1px solid blue;*/
+}
+
+.expense-item__payment-details__mode__institution-name{
+    font-size: 0.8rem;
+    /*border: 1px solid lightgrey;*/
+}
+
+.expense-item__payment-details__mode__details{
+    font-size: 0.8rem;
+    /*border: 1px solid cyan;*/
+}
+
+.expense-item__payment-details__amount{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    /*border: 2px solid cornflowerblue;*/
+}
+
+.expense-item__payment-details__amount__details{
+    display: flex;
+    flex-direction: row;
+
+    font-weight: bold;
+    background-color: #40005d;
+    border: 1px solid white;
+    border-radius: 12px;
+
+    padding: 0.5rem;
+}
+
+.app-base-currency-symbol{
+    /*border: 1px solid lawngreen;*/
+    padding-right: 0.5rem;
+}
+
+.expense-item__payment-details__amount__value{
+    /*border: 1px solid red;*/
+}
+
+
