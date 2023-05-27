@@ -1,5 +1,5 @@
-import "./ExpenseItemStyles.css"
-import "./ExpenseItemMediaQueryStyles.css"
+import "./ExpenseItemStyles.css";
+import "./ExpenseItemMediaQueryStyles.css";
 
 function ExpenseItem() {
     return (

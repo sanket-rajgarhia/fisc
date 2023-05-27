@@ -19,6 +19,9 @@
     align-items: center;
     gap: 0.5rem;
 
+    width: 4rem;
+    height: 4rem;
+
     color: white;
     background-color: black;
     border: 1px solid white;
