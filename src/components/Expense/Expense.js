@@ -1,7 +1,7 @@
-import "./Expenses.css";
+import "./Expense.css";
 
 import ExpenseItem from "./ExpenseItem/ExpenseItem";
-const Expenses = () => {
+const Expense = () => {
 
     return(
         <div className="expenses">
@@ -15,4 +15,4 @@ const Expenses = () => {
 
 }
 
-export default Expenses;
+export default Expense;
