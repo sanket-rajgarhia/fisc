@@ -56,7 +56,15 @@
 @media screen and (max-width: 390px) {
 
     .payment-details__mode__name{
-        font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (390 - 300)));
+        font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (390 - 300)));
+    }
+
+    .payment-details__mode__institution-name{
+        font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (390 - 300)));
+    }
+
+    .payment-details__mode__details{
+        font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (390 - 300)));
     }
 
     .app-base-currency-symbol{

@@ -38,10 +38,21 @@
 @media screen and (max-width: 390px) {
 
     .item-description__category__name{
-        font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (390 - 300)));
+        font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (390 - 300)));
     }
+
+    .item-description__details{
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
     .item-description__details__item{
-        font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (390 - 300)));
+        font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (390 - 300)));
+    }
+
+    .item-description__details__narration{
+        max-width: 90%;
+        font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (390 - 300)));
     }
 }
 
