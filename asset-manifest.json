@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fisc/static/css/main.0b4e58ea.css",
+    "main.js": "/fisc/static/js/main.7b7fa41c.js",
+    "static/js/787.2726c4d0.chunk.js": "/fisc/static/js/787.2726c4d0.chunk.js",
+    "index.html": "/fisc/index.html",
+    "main.0b4e58ea.css.map": "/fisc/static/css/main.0b4e58ea.css.map",
+    "main.7b7fa41c.js.map": "/fisc/static/js/main.7b7fa41c.js.map",
+    "787.2726c4d0.chunk.js.map": "/fisc/static/js/787.2726c4d0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b4e58ea.css",
+    "static/js/main.7b7fa41c.js"
+  ]
+}
