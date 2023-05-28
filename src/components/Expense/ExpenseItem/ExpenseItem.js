@@ -5,18 +5,18 @@ import ItemPayment from "./ItemPayment/ItemPayment";
 
 import "./ExpenseItem.css";
 
-function ExpenseItem(prop) {
+function ExpenseItem(props) {
 
     return (
         <Card className="expense-item">
             <div className="expense_item__item-date">
-                <ItemDate itemDate={prop.expenseData.itemDate}/>
+                <ItemDate itemDate={props.expenseData.itemDate}/>
             </div>
             <div className="expense_item__item-description">
-                <ItemDecription  itemDescription={prop.expenseData.itemDescription}/>
+                <ItemDecription  itemDescription={props.expenseData.itemDescription}/>
             </div>
             <div className="expense_item__item-payment">
-                <ItemPayment  itemPayment={prop.expenseData.itemPayment}/>
+                <ItemPayment  itemPayment={props.expenseData.itemPayment}/>
             </div>
         </Card>);
 }
