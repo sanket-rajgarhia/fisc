@@ -1,12 +1,12 @@
 import "./ItemDate.css";
 
-const ItemDate = () => {
+const ItemDate = (prop) => {
 
     return(
         <div className="item-date">
-            <p className="item-date__month">September</p>
-            <p className="item-date__year">2023</p>
-            <p className="item-date__day">24</p>
+            <p className="item-date__month">{prop.itemDate.month}</p>
+            <p className="item-date__year">{prop.itemDate.year}</p>
+            <p className="item-date__day">{prop.itemDate.day}</p>
         </div>
     );
 

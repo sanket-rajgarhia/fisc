@@ -4,12 +4,19 @@ import ItemPayment from "./ItemPayment/ItemPayment";
 
 import "./ExpenseItem.css";
 
-function ExpenseItem() {
+function ExpenseItem(prop) {
+
     return (
         <div className="expense-item">
-            <ItemDate className="expense_item__item-date"/>
-            <ItemDecription />
-            <ItemPayment />
+            <div className="expense_item__item-date">
+                <ItemDate itemDate={prop.expenseData.itemDate}/>
+            </div>
+            <div className="expense_item__item-description">
+                <ItemDecription  itemDescription={prop.expenseData.itemDescription}/>
+            </div>
+            <div className="expense_item__item-payment">
+                <ItemPayment  itemPayment={prop.expenseData.itemPayment}/>
+            </div>
         </div>);
 }
 

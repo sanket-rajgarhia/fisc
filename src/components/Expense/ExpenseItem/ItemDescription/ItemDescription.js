@@ -1,17 +1,16 @@
 import "./ItemDescription.css";
 
-const ItemDescription = () => {
+const ItemDescription = (prop) => {
 
     return (
         <div className="item-description">
             <div className="item-description__category">
-                <p className="item-description__category__name">INSURANCE-AS-A-CATEGORY</p>
+                <p className="item-description__category__name">{prop.itemDescription.categoryName}</p>
             </div>
 
             <div className="item-description__details">
-                <p className="item-description__details__item">Car Insurance Annual Premium</p>
-                <p className="item-description__details__narration">Narration - A quick brown fox jumps over the
-                    lazy dog - A quick brown fox jumps over the lazy dog</p>
+                <p className="item-description__details__item">{prop.itemDescription.itemDescription}</p>
+                <p className="item-description__details__narration">{prop.itemDescription.narration}</p>
             </div>
         </div>
     );
