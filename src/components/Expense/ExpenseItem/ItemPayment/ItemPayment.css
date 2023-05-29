@@ -46,7 +46,7 @@
     margin: 0.5rem;
 }
 
-.app-base-currency-symbol{
+.payment-details__amount__currency-symbol{
     padding-right: 0.5rem;
 }
 
@@ -67,7 +67,7 @@
         font-size: calc(10px + (16 - 10) * ((100vw - 300px) / (390 - 300)));
     }
 
-    .app-base-currency-symbol{
+    .payment-details__amount__currency-symbol{
         font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (390 - 300)));
     }
 

@@ -11,7 +11,7 @@ const ItemPayment = (props) => {
             </div>
             <div className="payment-details__amount">
                 <p className="payment-details__amount__details"><span
-                    className="app-base-currency-symbol">{props.itemPayment.paymentCurrencySymbol}</span><span
+                    className="payment-details__amount__currency-symbol">{props.itemPayment.paymentCurrencySymbol}</span><span
                     className="payment-details__amount__value">{props.itemPayment.paymentAmount}</span></p>
             </div>
         </div>
