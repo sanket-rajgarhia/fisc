@@ -94,7 +94,7 @@ const DataInputForm = () => {
                         <CreatableSelect name="transaction-payemnt-mode__instrument-label"
                                          id="transaction-payemnt-mode__instrument-label"
                                          className="select-input-field"
-                                         placeholder="Payment Instrument Label"
+                                         placeholder="Instrument Label"
                                          options={
                                              formData.getPaymentInstrumentTypeLabels().map((instrument) => {
                                                  return {
