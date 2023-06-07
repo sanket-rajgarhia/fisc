@@ -1,5 +1,6 @@
 import './App.css';
 
+import DataInputForm from "./components/DataInputForm/DataInputForm";
 import Expense from "./components/Expense/Expense";
 import ExpenseItemModel from "./components/Expense/ExpenseItem/ExpensesItemModel";
 
@@ -23,7 +24,10 @@ function App() {
     ];
 
     return (
-        <Expense expensesData={expensesData}/>
+        <div>
+            <DataInputForm/>
+            <Expense expensesData={expensesData}/>
+        </div>
     );
 }
 
