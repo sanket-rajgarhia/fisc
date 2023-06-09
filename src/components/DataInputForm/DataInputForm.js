@@ -26,13 +26,27 @@ const DataInputForm = () => {
         singleValue: (defaultStyles) => ({...defaultStyles}),
     };
 
+
+    const getCurrentDate = () => {
+        const today = new Date(Date.now());
+        let year = today.getFullYear();
+        let month = today.getMonth() + 1;
+        let date = today.getDate();
+
+        month = month.toString().length === 1 ? "0" + month : month;
+        date = date.toString().length === 1 ? "0" + date : date;
+
+        return year + "-" + month + "-" + date;
+    }
+
     return (
         <Card className="data-input">
             <form className='input-form'>
 
                 <div className="input-form__row">
                     <div className="col-1">
-                        <input type="date" name="transaction-date" id="transaction-date" className="input-field-date"/>
+                        <input type="date" name="transaction-date" id="transaction-date" className="input-field-date"
+                               value={getCurrentDate()}/>
                         <CreatableSelect name="transaction-category" id="transaction-category"
                                          className="select-input-field"
                                          placeholder="Category"
@@ -124,10 +138,8 @@ const DataInputForm = () => {
                                          }
                                          styles={customStyles}/>
 
-                        <input type="text" name="transaction-payemnt-mode__amount" i
-                               d="transaction-payemnt-mode__amount"
-                               className="input-field"
-                               placeholder="Amount"/>
+                        <input type="number" name="transaction-payemnt-mode__amount" id="transaction-payemnt-mode__amount"
+                               className="input-field" placeholder="Amount" />
                         <div className="submit">
                             <button type="submit">Add</button>
                         </div>
