@@ -15,6 +15,6 @@ const Expense = (props) => {
         </Card>
     );
 
-}
+};
 
 export default Expense;

@@ -65,7 +65,7 @@ class DataModelPopulation{
             new PaymentModeDataModel(codePrefixDataModel.getPaymentModeCode(), "Bank", -1, false),
             new PaymentModeDataModel(codePrefixDataModel.getPaymentModeCode(), "Debit Card", -1, false),
             new PaymentModeDataModel(codePrefixDataModel.getPaymentModeCode(), "Credit Card", -1, false)
-        ]
+        ];
 
         this._paymentMerchants = [
             new PaymentMerchantDataModel(codePrefixDataModel.getPaymentMerchantCode(), "None", -1, false),
@@ -97,7 +97,7 @@ class DataModelPopulation{
     getPaymentModes = () => this._paymentModes;
     getPaymentMerchants = () => this._paymentMerchants;
     getPaymentInstrumentTypeLabels = () => this._paymentInstrumentTypeLabels;
-    getCurrencysymbols = () => this._currencySymbols
+    getCurrencysymbols = () => this._currencySymbols;
 }
 
 export default DataModelPopulation;

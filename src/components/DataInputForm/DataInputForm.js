@@ -26,7 +26,6 @@ const DataInputForm = () => {
         singleValue: (defaultStyles) => ({...defaultStyles}),
     };
 
-
     const getCurrentDate = () => {
         const today = new Date(Date.now());
         let year = today.getFullYear();
@@ -37,16 +36,22 @@ const DataInputForm = () => {
         date = date.toString().length === 1 ? "0" + date : date;
 
         return year + "-" + month + "-" + date;
-    }
+    };
+
+    const submitDataInputFormHandler = (event) => {
+        event.preventDefault();
+        console.log(event.target)
+        console.log("Submitted");
+    };
 
     return (
         <Card className="data-input">
-            <form className='input-form'>
+            <form className='input-form' onSubmit={submitDataInputFormHandler}>
 
                 <div className="input-form__row">
                     <div className="col-1">
                         <input type="date" name="transaction-date" id="transaction-date" className="input-field-date"
-                               value={getCurrentDate()}/>
+                               />
                         <CreatableSelect name="transaction-category" id="transaction-category"
                                          className="select-input-field"
                                          placeholder="Category"
@@ -149,6 +154,6 @@ const DataInputForm = () => {
             </form>
         </Card>
     );
-}
+};
 
 export default DataInputForm;

@@ -19,6 +19,6 @@ function ExpenseItem(props) {
                 <ItemPayment  itemPayment={props.expenseData.itemPayment}/>
             </div>
         </Card>);
-}
+};
 
 export default ExpenseItem;

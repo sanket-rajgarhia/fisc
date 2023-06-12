@@ -17,6 +17,6 @@ const ItemPayment = (props) => {
         </div>
     );
 
-}
+};
 
 export default ItemPayment;

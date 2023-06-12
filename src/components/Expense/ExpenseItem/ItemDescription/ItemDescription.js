@@ -15,6 +15,6 @@ const ItemDescription = (props) => {
         </div>
     );
 
-}
+};
 
 export default ItemDescription;

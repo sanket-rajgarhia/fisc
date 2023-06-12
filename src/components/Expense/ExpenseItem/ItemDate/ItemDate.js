@@ -10,6 +10,6 @@ const ItemDate = (props) => {
         </div>
     );
 
-}
+};
 
 export default ItemDate;
