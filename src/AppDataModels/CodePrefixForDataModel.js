@@ -3,6 +3,7 @@ import { v4 as uuid } from 'uuid';
 class CodePrefixForDataModel{
 
     constructor(){
+        this._transactionCode = "TR-";
         this._categoryCode = "CAT-";
         this._itemCode = "ITM-";
         this._paymentModeCode = "PMC-";
@@ -11,6 +12,7 @@ class CodePrefixForDataModel{
         this._currencySymbolCode = "CCY-";
     }
 
+    getTransactionCode = () => this._transactionCode +uuid();
     getCategoryCode = () => this._categoryCode + uuid();
     getItemCode = () => this._itemCode + uuid();
     getPaymentModeCode = () => this._paymentModeCode + uuid();

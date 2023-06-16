@@ -1,14 +1,14 @@
 class ItemPaymentModel{
 
     constructor(paymentModeId, paymentModeDescription,
-                institutionId, institutionName,
+                paymentMerchantId, paymentMerchantName,
                 instrumentTypeId, instrumentType, instrumentDescription,
-                paymentCurrencyId, paymentCurrency, paymentCurrencySymbol, paymentAmount){
+                paymentCurrencyId, paymentCurrency, paymentCurrencyAbrv, paymentCurrencySymbol, paymentAmount){
         this.paymentModeId = paymentModeId;
         this.paymentModeDescription = paymentModeDescription;
 
-        this.institutionId = institutionId;
-        this.institutionName = institutionName;
+        this.paymentMerchantId = paymentMerchantId;
+        this.paymentMerchantName = paymentMerchantName;
 
         this.instrumentTypeId = instrumentTypeId;
         this.instrumentType = instrumentType;
@@ -16,6 +16,7 @@ class ItemPaymentModel{
 
         this.paymentCurrencyId = paymentCurrencyId;
         this.paymentCurrency = paymentCurrency;
+        this.paymentCurrencyAbrv = paymentCurrencyAbrv;
         this.paymentCurrencySymbol = paymentCurrencySymbol;
         this.paymentAmount = paymentAmount;
 

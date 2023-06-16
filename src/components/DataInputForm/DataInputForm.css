@@ -14,7 +14,7 @@
     flex-direction: column;
     flex: 1 1 0;
     border-radius: 12px;
-    background-color: #ae7ff7;
+    background-color: #9174E3;
 
     padding: 0.5rem;
     margin: 1rem;
@@ -71,6 +71,8 @@ button{
     width: 72px;
     border-radius: 5px;
     border: 1px solid gainsboro;
+    background-color: #b13be6;
+    color: white;
 }
 
 #transaction-item-narration{
