@@ -6,21 +6,12 @@ import {useState} from "react";
 import Card from "../Card/Card";
 import DataModelPopulation from "../../AppDataModels/DataModelPopulation";
 
+import {getCurrentDate} from "../../utils/Utils";
+import {customStylesForSelectAndCreatable} from "../../common/ReactSelectAndCreatableStyles";
+
 const DataInputForm = (props) => {
 
     const formData = new DataModelPopulation();
-
-    const getCurrentDate = () => {
-        const today = new Date(Date.now());
-        let year = today.getFullYear();
-        let month = today.getMonth() + 1;
-        let date = today.getDate();
-
-        month = month.toString().length === 1 ? "0" + month : month;
-        date = date.toString().length === 1 ? "0" + date : date;
-
-        return year + "-" + month + "-" + date;
-    };
 
     const [selectedTransactionDate, setTransactionDate] = useState(getCurrentDate());
     const [selectedTransactionCategory, setTransactionCategory] = useState('');
@@ -33,22 +24,7 @@ const DataInputForm = (props) => {
     const [selectedCurrencySymbol, setCurrencySymbol] = useState('');
     const [typedAmount, setAmount] = useState('0.00');
 
-    const customStyles = {
-        option: (defaultStyles, state) => ({
-            ...defaultStyles,
-            fontFamily: 'Source Sans Pro',
-            fontSize: "0.8rem",
-        }),
 
-        control: (defaultStyles) => ({
-            ...defaultStyles,
-            boxShadow: "none",
-            fontFamily: 'Source Sans Pro',
-            fontSize: "0.8rem",
-            minWidth: "180px",
-        }),
-        singleValue: (defaultStyles) => ({...defaultStyles}),
-    };
 
     const resetForm = () => {
         setTransactionDate(getCurrentDate());
@@ -147,7 +123,7 @@ const DataInputForm = (props) => {
                                                  };
                                              })
                                          }
-                                         styles={customStyles}
+                                         styles={customStylesForSelectAndCreatable}
                                          onChange={transactionCategoryChangeHandler}/>
                         <CreatableSelect name="transaction-item" id="transaction-item"
                                          className="select-input-field"
@@ -158,7 +134,7 @@ const DataInputForm = (props) => {
                                                  return {label: item.itemName, value: item.itemId};
                                              })
                                          }
-                                         styles={customStyles}
+                                         styles={customStylesForSelectAndCreatable}
                                          onChange={transactionItemChangeHandler}/>
                     </div>
                     <div className="col-2">
@@ -184,7 +160,7 @@ const DataInputForm = (props) => {
                                                  };
                                              })
                                          }
-                                         styles={customStyles}
+                                         styles={customStylesForSelectAndCreatable}
                                          onChange={paymentModeNameChangeHandler}/>
 
                         <CreatableSelect name="transaction-payemnt-mode__merchant"
@@ -200,7 +176,7 @@ const DataInputForm = (props) => {
                                                  };
                                              })
                                          }
-                                         styles={customStyles}
+                                         styles={customStylesForSelectAndCreatable}
                                          onChange={paymentMerchantChangeHandler}/>
 
                         <CreatableSelect name="transaction-payemnt-mode__instrument-label"
@@ -216,7 +192,7 @@ const DataInputForm = (props) => {
                                                  };
                                              })
                                          }
-                                         styles={customStyles}
+                                         styles={customStylesForSelectAndCreatable}
                                          onChange={istrumentLabelChangeHandler}/>
                     </div>
                     <div className="col-2">
@@ -238,7 +214,7 @@ const DataInputForm = (props) => {
                                                  value: currency.currencySymbolId
                                              };
                                          })}
-                                         styles={customStyles}
+                                         styles={customStylesForSelectAndCreatable}
                                          onChange={currencySymbolChangeHandler}/>
 
                         <input type="number" min="0.00" step="0.01" name="transaction-payemnt-mode__amount"

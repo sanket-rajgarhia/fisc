@@ -11,7 +11,7 @@ function App() {
 
     const codePrefixDataModel = new CodePrefixForDataModel();
     const [expenseData, setExpenseData] = useState([
-        new ExpenseItemModel(codePrefixDataModel.getTransactionCode(), new Date(2023,0,17),
+        new ExpenseItemModel(codePrefixDataModel.getTransactionCode(), new Date(2022,0,17),
             "C1", "ABCDEFGHIJKLMNOPQRSTUVWXYZABCD",
             "ITM1","AbcdefghijklmnopqrstuvwxyzAbcd", "AbcdefghijklmnopqrstuvwxyzAbcd-AbcdefghijklmnopqrstuvwxyzAbcd",
             "PM1","ABCDEFGHIJKLMNOPQRSTUVWXYZABCD",

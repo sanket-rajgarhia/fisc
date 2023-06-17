@@ -1,0 +1,19 @@
+.expense-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+label{
+    color: white;
+}
+
+.date-filter{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
