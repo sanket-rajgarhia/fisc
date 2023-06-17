@@ -8,9 +8,23 @@ import {useState} from "react";
 
 const Expense = (props) => {
 
+    const [expensesData, setExpensesData] = useState(props.expensesData);
+
     const filterSelectionHandler = (year, month) => {
-        console.log(year);
-        console.log(month);
+        if (year.value == 0) {
+            if (month.value == 0) {
+                setExpensesData(props.expensesData);
+            } else {
+                setExpensesData(props.expensesData.filter(expenseDataItem => expenseDataItem.itemDate.month === month.label));
+            }
+        } else {
+            if (month.value == 0) {
+                setExpensesData(props.expensesData.filter(expenseDataItem => expenseDataItem.itemDate.year === year.label));
+            } else {
+                setExpensesData(props.expensesData.filter(expenseDataItem => expenseDataItem.itemDate.year === year.label &&
+                    expenseDataItem.itemDate.month === month.label));
+            }
+        }
     }
 
     return (
@@ -22,8 +36,8 @@ const Expense = (props) => {
                            onFilterSelection={filterSelectionHandler}
             />
 
-            {props.expensesData.map(expenseItem => <ExpenseItem key={expenseItem.expenseItemId}
-                                                                expenseData={expenseItem}/>)}
+            {expensesData.map(expenseItem => <ExpenseItem key={expenseItem.expenseItemId}
+                                                          expenseData={expenseItem}/>)}
         </Card>
     );
 
