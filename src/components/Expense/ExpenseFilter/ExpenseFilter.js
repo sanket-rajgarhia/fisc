@@ -8,23 +8,25 @@ import {customStylesForSelectAndCreatable} from "../../../common/ReactSelectAndC
 
 const ExpenseFilter = (props) => {
 
-    const yearOptions = props.years.map((year, index) => {
-        return {label: year, value: index}
+    let yearOptions = props.years.map((year, index) => {
+        return {label: year, value: index + 1}
     });
+    yearOptions = [{label:"All", value: 0}, ...yearOptions];
+
     const monthOptions = [
-        {label: "None", value: "0"},
-        {label: "January", value: "1"},
-        {label: "February", value: "2"},
-        {label: "March", value: "3"},
-        {label: "April", value: "4"},
-        {label: "May", value: "5"},
-        {label: "June", value: "6"},
-        {label: "July", value: "7"},
-        {label: "August", value: "8"},
-        {label: "September", value: "9"},
-        {label: "October", value: "10"},
-        {label: "November", value: "11"},
-        {label: "December", value: "12"}
+        {label: "All", value: 0},
+        {label: "January", value: 1},
+        {label: "February", value: 2},
+        {label: "March", value: 3},
+        {label: "April", value: 4},
+        {label: "May", value: 5},
+        {label: "June", value: 6},
+        {label: "July", value: 7},
+        {label: "August", value: 8},
+        {label: "September", value: 9},
+        {label: "October", value: 10},
+        {label: "November", value: 11},
+        {label: "December", value: 12}
     ];
 
     const indexValueOfCurrentYear = yearOptions.filter(year => year.label == getCurrentYear())[0].value;

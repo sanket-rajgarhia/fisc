@@ -4,6 +4,8 @@ import Card from "../Card/Card";
 import ExpenseItem from "./ExpenseItem/ExpenseItem";
 import ExpenseFilter from "./ExpenseFilter/ExpenseFilter";
 
+import {useState} from "react";
+
 const Expense = (props) => {
 
     const filterSelectionHandler = (year, month) => {
