@@ -17,3 +17,20 @@ label{
     flex-direction: row;
     gap: 1rem;
 }
+
+@media screen and (max-width: 1400px){
+    .expense-filter{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .expense-filter{
+        flex-direction: column;
+        align-content: flex-start;
+    }
+    .date-filter{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
