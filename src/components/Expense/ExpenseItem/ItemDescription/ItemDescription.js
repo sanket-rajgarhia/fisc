@@ -5,7 +5,7 @@ const ItemDescription = (props) => {
     return (
         <div className="item-description">
             <div className="item-description__category">
-                <p className="item-description__category__name">{props.itemDescription.categoryName}</p>
+                <p className="item-description__category__name">{props.itemDescription.categoryName.toUpperCase()}</p>
             </div>
 
             <div className="item-description__details">

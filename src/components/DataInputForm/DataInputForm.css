@@ -3,10 +3,22 @@
     flex-direction: row;
     justify-content: flex-start;
 
-    background-color: gainsboro;
+    background-color: #9174E3;
     margin:0.5rem;
     padding-top: 0.1rem;
     padding-bottom: 0.1rem;
+}
+
+.data-input-button{
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #9174E3;
+
+    padding: 1rem;
+    margin:0.5rem;
+
+    position: relative;
 }
 
 .input-form{
@@ -68,11 +80,18 @@
 
 button{
     min-height: 36px;
-    width: 72px;
+    min-width: 72px;
     border-radius: 5px;
     border: 1px solid gainsboro;
-    background-color: #b13be6;
+    background-color: #940ad2;
     color: white;
+    font-weight: bolder;
+}
+
+.btn-add-expense{
+    padding: 1rem;
+    white-space: nowrap;
+    min-width: 172px;
 }
 
 #transaction-item-narration{
