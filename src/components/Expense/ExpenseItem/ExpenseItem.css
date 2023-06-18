@@ -11,6 +11,18 @@
     margin: 1rem;
 }
 
+.expense-item-empty{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    background-color: #4b4b4b;
+
+    padding: 0.5rem;
+    margin: 1rem;
+}
 .expense_item__item-date{
 }
 
@@ -20,6 +32,14 @@
 
 .expense_item__item-payment{
     flex: 2 1 0;
+}
+
+.no-items__display{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: bold;
+    margin: 2.06rem;
 }
 
 @media screen and (max-width: 1400px) {

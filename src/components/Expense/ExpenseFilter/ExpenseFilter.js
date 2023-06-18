@@ -11,7 +11,12 @@ const ExpenseFilter = (props) => {
     let yearOptions = props.years.map((year, index) => {
         return {label: year, value: index + 1}
     });
-    yearOptions = [{label:"All", value: 0}, ...yearOptions];
+    if(yearOptions.length === 0){
+        yearOptions = [{label:"All", value: 0}, {label:getCurrentYear(), value: 1}];
+    }
+    else{
+        yearOptions = [{label:"All", value: 0}, ...yearOptions];
+    }
 
     const monthOptions = [
         {label: "All", value: 0},
@@ -29,7 +34,7 @@ const ExpenseFilter = (props) => {
         {label: "December", value: 12}
     ];
 
-    const indexValueOfCurrentYear = yearOptions.filter(year => year.label == getCurrentYear())[0].value;
+    let indexValueOfCurrentYear = yearOptions.filter(year => year.label === getCurrentYear())[0].value;
     const [selectedYear, setSelectedYear] = useState({label: getCurrentYear(), value: indexValueOfCurrentYear});
     const [selectedMonth, setselectedMonth] = useState({label: getCurrentMonthName(), value: getCurrentMonthNo()});
 
