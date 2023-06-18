@@ -10,13 +10,13 @@ function ExpenseItem(props) {
     return (
         <Card className="expense-item">
             <div className="expense_item__item-date">
-                <ItemDate itemDate={props.expenseData.itemDate}/>
+                <ItemDate itemDate={props.expenseItemData.itemDate}/>
             </div>
             <div className="expense_item__item-description">
-                <ItemDecription  itemDescription={props.expenseData.itemDescription}/>
+                <ItemDecription  itemDescription={props.expenseItemData.itemDescription}/>
             </div>
             <div className="expense_item__item-payment">
-                <ItemPayment  itemPayment={props.expenseData.itemPayment}/>
+                <ItemPayment  itemPayment={props.expenseItemData.itemPayment}/>
             </div>
         </Card>);
 };

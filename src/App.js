@@ -42,9 +42,7 @@ function App() {
             newExpenseData.instrumentLabel.value, newExpenseData.instrumentLabel.label, newExpenseData.instrumentNo,
             newExpenseData.currencySymbol.value, currencyName,currency[3], currency[0], newExpenseData.amount);
 
-        console.log(newExpenseItem);
-
-        setExpenseData([...expenseData, newExpenseItem ]);
+        setExpenseData(previousState => [...previousState, newExpenseItem ]);
     }
 
     return (

@@ -37,7 +37,7 @@ const Expense = (props) => {
             />
 
             {expensesData.map(expenseItem => <ExpenseItem key={expenseItem.expenseItemId}
-                                                          expenseData={expenseItem}/>)}
+                                                          expenseItemData={expenseItem}/>)}
         </Card>
     );
 
