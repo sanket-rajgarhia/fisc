@@ -230,13 +230,14 @@ const DataInputForm = (props) => {
                                    className="input-field" placeholder="Amount"
                                    value={typedAmount}
                                    onChange={amountChangeHandler}/>
-                            <div className="submit">
-                                <button type="submit">Add</button>
+                            <div  className="submit">
+                                <div>
+                                    <button className="btn-add" type="submit">Add</button>
+                                </div>
+                                <div>
+                                    <button onClick={cancelButtonClickHandler}>Cancel</button>
+                                </div>
                             </div>
-                            <div className="submit">
-                                <button onClick={cancelButtonClickHandler}>Cancel</button>
-                            </div>
-
                         </div>
                     </div>
                 </form>
