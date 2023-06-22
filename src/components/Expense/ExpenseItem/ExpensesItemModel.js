@@ -18,6 +18,8 @@ class ExpensesItemModel{
             instrumentTypeId,instrumentType,instrumentDescription,
             paymentCurrencyId, paymentCurrency,paymentCurrencyAbrv, paymentCurrencySymbol,
             paymentAmount);
+
+        //paymentAmount - length supported 22 with 1 decimal point and 3 commas Eg. 0123,456,789,123,45.60
     }
 
 }
